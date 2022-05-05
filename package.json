@@ -1,0 +1,65 @@
+{
+  "name": "@col0ring/eslint-config",
+  "description": "Col0ring's Eslint Config Presets",
+  "version": "0.0.1",
+  "main": "./libs/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "exports": {
+    ".": {
+      "require": "./lib/index.js"
+    },
+    "./basic": {
+      "require": "./lib/basic.js"
+    },
+    "./react": {
+      "require": "./lib/react.js"
+    },
+    "./typescript": {
+      "require": "./lib/typescript.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "typescript",
+    "react"
+  ],
+  "author": {
+    "email": "1561999073@qq.com",
+    "name": "Col0ring"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/col0ring/eslint-config"
+  },
+  "homepage": "https://github.com/col0ring/eslint-config",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^8.14.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.8",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2",
+    "react": "^18.1.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0"
+  }
+}
