@@ -34,7 +34,7 @@ module.exports = {
   rules: {
     // prettier 配置
     'prettier/prettier': 'warn',
-    'no-unused-vars': ['warn', { vars: 'all', varsIgnorePattern: '_' }],
+    'no-unused-vars': ['warn', { vars: 'all', varsIgnorePattern: '^_' }],
     // async 必须有 await
     'require-await': 'warn',
     // generator 函数必须有 yield

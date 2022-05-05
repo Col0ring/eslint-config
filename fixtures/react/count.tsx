@@ -12,5 +12,4 @@ const Counter: React.FC = () => {
     </div>
   )
 }
-
 export default Counter

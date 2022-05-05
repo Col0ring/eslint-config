@@ -1,7 +1,7 @@
 {
   "name": "@col0ring/eslint-config",
   "description": "Col0ring's Eslint Config Presets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./libs/index.js",
   "publishConfig": {
     "access": "public",
