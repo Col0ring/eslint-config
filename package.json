@@ -1,7 +1,7 @@
 {
   "name": "@col0ring/eslint-config",
   "description": "Col0ring's Eslint Config Presets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./libs/index.js",
   "publishConfig": {
     "access": "public",
@@ -9,15 +9,19 @@
   },
   "exports": {
     ".": {
+      "import": "./libs/index.js",
       "require": "./libs/index.js"
     },
     "./basic": {
+      "import": "./libs/basic.js",
       "require": "./libs/basic.js"
     },
     "./react": {
+      "import": "./libs/react.js",
       "require": "./libs/react.js"
     },
     "./typescript": {
+      "import": "./libs/typescript.js",
       "require": "./libs/typescript.js"
     }
   },
@@ -42,7 +46,7 @@
   "homepage": "https://github.com/col0ring/eslint-config",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">=^8.14.0"
+    "eslint": ">=8.14.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.8",

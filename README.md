@@ -11,7 +11,9 @@ yarn add @col0ring/eslint-config -D
 // .eslintrc.js
 module.exports = {
     // js,ts and react
-    extends: ["@col0ring"]
+    extends: ["@col0ring/eslint-config"]
+    // or 
+    // extends: ["col0ring"]
 }
 ```
 if you need a  separate configuration:
@@ -19,6 +21,6 @@ if you need a  separate configuration:
 // .eslintrc.js
 module.exports = {
     // js ts and react
-    extends: ["@col0ring/basic","@col0ring/typescript","@col0ring/react"]
+    extends: ["@col0ring/eslint-config/basic","@col0ring/eslint-config/typescript","@col0ring/eslint-config/react"]
 }
 ```
