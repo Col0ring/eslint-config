@@ -13,7 +13,7 @@ module.exports = {
     // js,ts and react
     extends: ["@col0ring/eslint-config"]
     // or 
-    // extends: ["col0ring"]
+    // extends: ["@col0ring"]
 }
 ```
 if you need a  separate configuration:
