@@ -35,6 +35,9 @@ module.exports = {
     // prettier 配置
     'prettier/prettier': 'warn',
     'no-unused-vars': ['warn', { vars: 'all', varsIgnorePattern: '^_' }],
+    'import/no-named-as-default': 'off',
+    // 使用单成员导出
+    'import/no-named-as-default-member': 'off',
     // async 必须有 await
     'require-await': 'warn',
     // generator 函数必须有 yield
