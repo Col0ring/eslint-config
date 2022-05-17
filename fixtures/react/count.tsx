@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-const Counter: React.FC = () => {
+export interface CounterProps {
+  foo?: string
+}
+type Component = React.FC<CounterProps>
+const Counter: Component = (props) => {
+  const { foo } = props
   const [count, setCount] = useState(0)
   useEffect(() => {
     console.log(count)
