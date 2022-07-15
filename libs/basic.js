@@ -26,7 +26,7 @@ module.exports = {
     'import/resolver': {
       // for javascript
       typescript: {
-        project: ['./**/jsconfig.json'],
+        project: ['./**/tsconfig.json', './**/jsconfig.json'],
       },
     },
     'import/extensions': ['.js', '.jsx', '.mjs'],

@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./basic', './react', './typescript'],
+  extends: ['./basic', './test', './react', './typescript'],
 }
