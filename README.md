@@ -29,11 +29,11 @@ If you need a separate configuration:
 module.exports = {
   // js ts and react
   extends: [
+    // test env, not in the default configuration, must be the first extends configuration
+    '@col0ring/eslint-config/test',
     '@col0ring/eslint-config/basic',
     '@col0ring/eslint-config/typescript',
     '@col0ring/eslint-config/react',
-    // test env, not in the default configuration
-    '@col0ring/eslint-config/test',
   ],
 }
 ```

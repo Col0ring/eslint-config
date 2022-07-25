@@ -1,6 +1,6 @@
 {
   "name": "@col0ring/eslint-config",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Col0ring's Eslint Config Presets",
   "keywords": [
     "eslint",
