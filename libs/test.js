@@ -1,10 +1,10 @@
 module.exports = {
-  extends: ['./basic'],
   overrides: [
     {
       plugins: ['jest'],
       files: ['*.{test,spec}.{js,jsx,ts,tsx}'],
       extends: [
+        './basic',
         'plugin:jest/recommended',
         'plugin:jest/style',
         'plugin:jest-dom/recommended',
