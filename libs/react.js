@@ -32,5 +32,10 @@ module.exports = {
         'react/prop-types': 'off',
       },
     },
+    // for testing
+    {
+      files: ['*.{test,spec}.{js,jsx,ts,tsx}'],
+      extends: ['plugin:testing-library/react'],
+    },
   ],
 }

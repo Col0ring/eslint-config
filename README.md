@@ -32,7 +32,7 @@ module.exports = {
     '@col0ring/eslint-config/basic',
     '@col0ring/eslint-config/typescript',
     '@col0ring/eslint-config/react',
-    // test env
+    // test env, not in the default configuration
     '@col0ring/eslint-config/test',
   ],
 }

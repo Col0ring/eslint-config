@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./libs/index'],
+  extends: ['./libs/index', './libs/test'],
 }
