@@ -9,7 +9,7 @@ module.exports = {
         'plugin:jest/style',
         'plugin:jest-dom/recommended',
         'plugin:jest-formatting/recommended',
-        'plugin:testing-library/react'
+        'plugin:testing-library/react',
       ],
       settings: {
         jest: {

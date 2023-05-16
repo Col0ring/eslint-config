@@ -47,6 +47,15 @@ module.exports = {
           'warn',
           { vars: 'all', varsIgnorePattern: '^_' },
         ],
+        '@typescript-eslint/ban-types': [
+          'error',
+          {
+            types: {
+              '{}': false,
+            },
+            extendDefaults: true,
+          },
+        ],
       },
     },
   ],

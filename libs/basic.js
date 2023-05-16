@@ -5,6 +5,8 @@ module.exports = {
     es6: true,
   },
   ignorePatterns: [
+    '.umi',
+    '.umi-production',
     '*.min.*',
     'dist',
     'output',
@@ -12,6 +14,12 @@ module.exports = {
     'public',
     'temp',
     '__snapshots__',
+    // dumi
+    'docs-dist',
+    '.dumi/tmp',
+    '.dumi/tmp-test',
+    '.dumi/tmp-production',
+    'tmp',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -22,6 +30,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:prettier/recommended',
   ],
+  plugins: ['simple-import-sort'],
   settings: {
     'import/resolver': {
       // for javascript
@@ -46,5 +55,37 @@ module.exports = {
     'no-shadow': 'error',
     'no-debugger': 'warn',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'prefer-rest-params': 'warn',
+    'no-empty-pattern': 'warn',
+    'no-control-regex': 'warn',
+
+    // // import 排序
+    'simple-import-sort/imports': [
+      'warn',
+      {
+        groups: [
+          // Packages. `react` related packages come first.
+          // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+          ['react', 'react-dom', '^react', 'umi', 'dumi', '^@?\\w'],
+          // Side effect imports.
+          ['^\\u0000'],
+          ['^@/\\w'],
+          // Parent imports. Put `..` last.
+          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+          [
+            // Other relative imports. Put same-folder imports and `.` last.
+            '^\\./(?=.*/)(?!/?$)',
+            '^\\.(?!/?$)',
+            '^\\./?$',
+          ],
+          // Style imports.
+          ['^.+\\.(scss|sass|less|css)$'],
+        ],
+      },
+    ],
+    'simple-import-sort/exports': 'warn',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
   },
 }

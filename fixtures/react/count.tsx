@@ -18,3 +18,4 @@ const Counter: Component = (props) => {
   )
 }
 export default Counter
+const a = 1
